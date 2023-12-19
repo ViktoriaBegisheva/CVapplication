@@ -4,15 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary90"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="176dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="117dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="280dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:background="#0076D1FF"
+            android:text="Firstname Lastname"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+        <Button
+            android:id="@+id/moreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:background="#0003A9F4"
+            android:text="see more information ..."
+            android:textColor="#EE121010"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:layout_editor_absoluteX="64dp" />
+
+        <TextView
+            android:id="@+id/telfonNumber"
+            android:layout_width="250dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:background="#0076D1FF"
+            android:text="Telfon Number"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:background="#0003A9F4"
+            android:text="call ..."
+            android:textColor="#EE121010"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:layout_editor_absoluteX="64dp" />
+
+        <TextView
+            android:id="@+id/emailAdress"
+            android:layout_width="250dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:text="Email Adress"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+        <Button
+            android:id="@+id/writeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:background="#0003A9F4"
+            android:text="write Email (invite to interview) ..."
+            android:textColor="#EE121010"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:layout_editor_absoluteX="64dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
